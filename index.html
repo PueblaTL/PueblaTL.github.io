@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Argentina Programa</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/46daae8091.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- MENU -->
+    <div class="contenedor-header">
+        <header>
+            <i class="fa-solid fa-sun"></i>
+            <div class="logo">
+                <a href="#">¡Bienvenidos a mi sitio web!</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <i class="fa-solid fa-house"></i>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <i class="fa-solid fa-user"></i>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <i class="fa-solid fa-phone"></i>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <i class="fa-solid fa-bolt"></i>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <i class="fa-solid fa-book"></i>
+                    <li><a href="#curriculum" onclick="seleccionar()">EXPERIENCIA</a></li>
+                </ul>
+            </nav>
+    </div>
+
+    <!-- MENU DE INICIO -->
+    <!-- SECCION INICIO --> 
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img id="foto" src="" alt="imagen">
+            </div>
+            <h1><span id="nombre"></span> <span id="apellido"></span></h1>
+
+        </div>
+        <div class="boton">
+            <button id="boton">CREAR CV</button>
+        </div>
+    
+    </section>
+
+    <!-- INFORMACION PERSONAL -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti
+                repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+
+            <div class="fila">
+                <!-- DATOS PERSONALES -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Edad:</strong>
+                            <span id="edad"></span>
+                        </li>
+                        <li>
+                        <strong>Nacionalidad:</strong>
+                        <span id="pais"></span>
+                        </li>
+                        <li>
+                            <strong>Dirección:</strong>
+                            <span id="direccion"> </span> <span id="ndireccion"></span>, <span id="ciudad"></span>
+                        </li>
+                        <li>
+                            <strong>Código postal:</strong>
+                            <span id="cp"></span>
+                        </li>
+                        <li>
+                            <strong>Teléfono:</strong>
+                            <span id="telefono"></span>
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            <span id="correo"></span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- SECCION CONTACTO -->
+                <section id="contacto" class="contacto">
+                    <div class="contenido-seccion">
+                        <h2>CONTACTO</h2>
+                        <div class="info">
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    Llamanos: <span id="celular"></span>
+                                </li>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- HABILIDADES-->
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>MIS HABILIDADES:</h2>
+            <div class="skill">
+                <!-- Habilidades duras -->
+                <div class="skill-h">
+                    <h3>Hard skills</h3>
+                    <span>HTML y CSS</span>
+                    <div class="barra-skill">
+                        <div class="progreso" style="--w:80%">
+                        </div>
+                    </div>
+                    <span>Javascript</span>
+                    <div class="barra-skill">
+                        <div class="progreso" style="--w:60%">
+                        </div>
+                    </div>
+                    <span>PHP</span>
+                    <div class="barra-skill">
+                        <div class="progreso" style="--w:40%">
+                        </div>
+                    </div>
+                    <span>Phython</span>
+                    <div class="barra-skill">
+                        <div class="progreso" style="--w:30%">
+                        </div>
+                    </div>
+                    <span>Ingles</span>
+                    <div class="barra-skill">
+                        <div class="progreso" style="--w:90%">
+                        </div>
+                    </div>
+                </div>
+                <!-- habilidades blandas -->
+                <div class="skill-s">
+                    <h3>Soft Skills</h3>
+                    <span>Creatividad</span>
+                    <div class="barra-skill">
+                        <div class="progreso" style="--w:95%">
+                        </div>
+                    </div>
+                    <span>Comunicación</span>
+                    <div class="barra-skill">
+                        <div class="progreso" style="--w:75%">
+                        </div>
+                    </div>
+                    <span>Trabajo en equipo</span>
+                    <div class="barra-skill">
+                        <div class="progreso" style="--w:80%">
+                        </div>
+                    </div>
+                    <span>Organización</span>
+                    <div class="barra-skill">
+                        <div class="progreso" style="--w:60%">
+                        </div>
+                    </div>
+                    <span>Pensamiento crítico</span>
+                    <div class="barra-skill">
+                        <div class="progreso" style="--w:85%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRICULUM VITAE -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4> Cursos: </h4>
+                        <span class="casa">Argentina Programa: Tercera Edicion</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora
+                            recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta
+                            aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <span class="casa">Desarrollo Front-End</span>
+                        <span class="fecha">2023 - actualidad</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora
+                            recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta
+                            aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingles</h4>
+                        <span class="casa">Aprendizaje autodidacta</span>
+                        <span class="fecha">2015 - actualidad</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora
+                            recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta
+                            aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front-End Developer</h4>
+                        <span class="casa"> Creación de paginas web</span>
+                        <span class="fecha">2022 - actualidad</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora
+                            recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta
+                            aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front-End Developer</h4>
+                        <span class="casa">Proyectos de desarrollo freelance</span>
+                        <span class="fecha">2022 - actualidad</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora
+                            recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta
+                            aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front-End Developer</h4>
+                        <span class="casa">Desarrollo de aplicaciones</span>
+                        <span class="fecha">2022 - actualidad</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora
+                            recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta
+                            aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCIÓN DEL CREADOR-->
+    <section id="creador" class="creador">
+        <div class="contenido-banner">
+            <h2>Creado por:</h2>
+            <p>Braian Agustin Puebla</p>
+            <div class="img-agus">
+                <img src="iasdcsdf.PNG.png" alt="imagen del autor(Agustin)">
+            </div>
+            <p>Hola, soy Agustin y este es mi proyecto final para el curso "primeros pasos del desarrollo Front-End". </p>
+            <div class="color">
+                <span> Argentina Programa (Plataforma: Ticmas Academy) </span>
+            </div>
+        </div>
+    </section>
+    <script src="func.js"></script>
+</body>
+
+</html>

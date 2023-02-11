@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+/* MENU */
+.contenedor-header {
+    background: #1e2326;
+    position: fixed;   
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-header header .logo a {
+    font-family: 'Righteous';
+    font-size: 30px;
+    color: #b61c1c;
+    text-decoration: none;
+    margin-right: 60px;
+    margin-left: 5px;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+    text-align: none;
+    color: #fff;
+    margin: 0 5px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+header i {
+    font-size: 20px;
+    align-self: center; 
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: #b61c1c;
+}
+
+.nav-responsive {
+    background-color: #b61c1c;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* SECCION I N I C I O */
+.inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+        url(img/fondo.jpg);
+    height: 100vh;
+    color: hsla(0, 100%, 48%, 0.514);
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner {
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img {
+    margin-top: 40px;
+    border: 10px solid #910909ea;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1 {
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+
+.inicio .contenido-banner h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.sobremi {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.sobremi .contenido-seccion p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .contenido-seccion p span {
+    color: #b61c1c;
+    font-weight: bold;
+}
+
+.sobremi .fila {
+    display: flex;
+}
+
+.sobremi .fila .col {
+    width: 50%;
+}
+
+.sobremi .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul {
+    list-style: none;
+}
+
+.sobremi .fila .col ul li {
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong {
+    display: inline-block;
+    color: #b61c1c;
+    width: 130px;
+}
+
+.sobremi .fila .col ul li span {
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+/* SECCION GENERADOR USUARIO */
+
+.contenedor {
+    width: 60%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow: 2px 2px 7px rgb(187, 198, 214);
+    border-radius: 10px;
+}
+img {
+    border-radius: 70%;
+    width: 150px;
+}
+/* Boton para crear un nuevo perfil */
+.boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    border: none;
+    background: linear-gradient(to right, rgb(174, 14, 14), rgba(224, 7, 61, 0.712));
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all ease 400ms;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* SECCION HABILIDADES */
+.skills {
+    background-image: url(img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    align-items: center;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-h {
+    margin: 20px;
+    padding: 20px;
+}
+
+.skill-s {
+    margin: 20px;
+    padding: 20px;
+}
+
+.barra-skill {
+    width: 350px;
+    height: 20px;
+    background: rgba(225, 225, 225, 0.5);
+    border-radius: 10px;
+    box-shadow: 20px 25px 45px rgba(0, 0, 0, 0.4);
+    border-right: 3px solid rgba(225, 225, 225, 0.5);
+    border-bottom: 3px solid rgba(225, 225, 225, 0.5);
+}
+
+h2 {
+    text-align: center;
+}
+
+.progreso {
+    width: var(--w);
+    height: 100%;
+    background: rgba(225, 225, 225, 1);
+    border-radius: 10px;
+    animation: Aumentar 5s ease;
+}
+
+@keyframes aumenta {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--w);
+    }
+}
+
+.habilidades:active .progreso {
+    animation: Aumentar 5s ease;
+}
+
+/* SECCION CURRICULUM */
+.curriculum {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.curriculum .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.curriculum h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.curriculum .fila {
+    display: flex;
+    justify-content: space-between;
+}
+
+.curriculum .fila .col {
+    width: 49%;
+    padding: 0 20px;
+}
+
+.curriculum .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.curriculum .fila .izquierda {
+    border-right: 2px solid #252A2E;
+}
+
+.curriculum .fila .derecha {
+    border-left: 2px solid #252A2E;
+}
+
+.curriculum .fila .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+
+.curriculum .fila .item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item .casa {
+    color: #b61c1c;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.curriculum .fila .item .fecha {
+    display: block;
+    color: #b61c1c;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item p {
+    line-height: 24px;
+}
+
+.curriculum .fila .izq {
+    border-right: 2px solid #b61c1c;
+    margin-right: 20px;
+}
+
+.curriculum .fila .der {
+    border-left: 2px solid #b61c1c;
+    margin-left: 20px;
+}
+
+.curriculum .fila .item .conectori {
+    height: 2px;
+    background-color: #b61c1c;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conectori .circuloi {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #b61c1c;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum .fila .item .conectord {
+    height: 2px;
+    background-color: #b61c1c;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conectord .circulod {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #b61c1c;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+/* SECCION CONTACTO */
+.contacto {
+    background-image: url(img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila {
+    display: flex;
+}
+
+.contacto .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+
+/* Seccion del autor */
+.creador {
+    background: linear-gradient(to top, rgba(5, 6, 100, 0.911), rgb(155, 153, 168)),
+        url(img/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: rgb(255, 240, 240)
+}
+
+.creador .contenido-banner {
+    padding: 10px;
+    background-color: #1e2326;
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.creador .img-agus {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.creador .contenido-banner h1 {
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+
+.creador .contenido-banner h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+.color {
+    color: rgb(255, 0, 149)
+}
+
+
+/* SECCION DE DISEÑO RESPONSIVO */
+@media screen and (max-width:980px) {
+    nav {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: block;
+    }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+    }
+
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
